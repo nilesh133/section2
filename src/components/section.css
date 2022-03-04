@@ -1,0 +1,85 @@
+.section{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(2, 132, 248, 0.69), rgba(19, 57, 91, 1));
+    padding: 0 4rem;
+}
+
+.left .bottle{
+    position: absolute;
+    top: 62%;
+}
+
+.left .cap{
+    position: absolute;
+    height: 80px;
+    top: 60%;
+    z-index: 100;
+}
+
+.left h2{
+    font-size: 48px;
+    margin: 0;
+    padding: 6rem 1rem 2rem;
+    width: 70%;
+    color: white;
+}
+
+.left button{
+    background: linear-gradient(180deg, #E9C46B 0%, #F3A261 100%);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.7rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.left p{
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem 2rem;
+    width: 70%;
+}
+
+.right{
+    width: 45%;
+    height: 100vh;
+    position: relative;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    .section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 130%;
+    }
+ }
